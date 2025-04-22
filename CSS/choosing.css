@@ -1,64 +1,63 @@
 body {
-    background-color: #141414;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-  }
-  
-  .profiles {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .profile {
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-  }
-  
-  .profile:hover {
-    transform: scale(1.05);
-  }
-  
-  .avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 30px;
-    background-size: cover;
-    background-position: center;
-    background-color: #333;
-    margin-bottom: 10px;
-  }
-  
-  #piyush {
-    background-image: url('../assets/images/sir.jpeg');
-  }
-  
-  #recruiter {
-    background-image: url('../assets/images/whoicon.png');
-  }
-  
-  #stalker {
-    background-image: url('../assets/images/stalker.jpg');
-  }
-  
-  .profile p {
-    font-size: 1.1em;
-    color: #eee;
-  }
-  
+  background-color: #141414;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.profile:hover {
+  transform: scale(1.05);
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  background-color: #333;
+  margin-bottom: 10px;
+}
+
+#piyush {
+  background-image: url('/noel_portfolio/assets/images/sir.jpeg');
+}
+
+#recruiter {
+  background-image: url('/noel_portfolio/assets/images/whoicon.png');
+}
+
+#stalker {
+  background-image: url('/noel_portfolio/assets/images/stalker.jpg');
+}
+
+.profile p {
+  font-size: 1.1em;
+  color: #eee;
+}

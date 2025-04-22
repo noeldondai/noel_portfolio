@@ -53,7 +53,7 @@ body {
 .intro-section {
   position: relative;
   height: 50vh;
-  background: url('../assets/images/tumb.gif') no-repeat center center/cover;
+  background: url('/noel_portfolio/assets/images/tumb.gif') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: flex-start;

@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     video.addEventListener("ended", () => {
-        window.location.href = "./Html/choosing.html";
+        window.location.href = "/noel_portfolio/Html/choosing.html";
     });
 });
