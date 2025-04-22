@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hire Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #hirePrompt {
+      font-size: 2rem;
+      padding: 20px 40px;
+      border: 2px solid red;
+      border-radius: 10px;
+      color: red;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 2;
+    }
+
+    #hirePrompt:hover {
+      background-color: red;
+      color: black;
+      font-size: 2.2rem;
+      text-shadow: 0 0 10px white;
+    }
+
+    video {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    #goBack {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: red;
+      color: black;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: none;
+      z-index: 3;
+    }
+
+    #goBack:hover {
+      background-color: white;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="hirePrompt">Really hiring me?</div>
+
+  <button id="goBack" onclick="history.back()">Go Back</button>
+
+  <video id="hireVideo" autoplay muted playsinline>
+    <source src="../assets/videos/hireme.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    const prompt = document.getElementById('hirePrompt');
+    const video = document.getElementById('hireVideo');
+    const goBackBtn = document.getElementById('goBack');
+
+    prompt.addEventListener('click', () => {
+      prompt.style.display = 'none';
+      video.style.display = 'block';
+      goBackBtn.style.display = 'block';
+      video.muted = false; // enable audio
+      video.play();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-container {
+      padding: 20px 40px;
+      border-radius: 50px;
+      background-color: transparent;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .text-container:hover {
+      background-color: black;
+      color: red;
+      transform: scale(1.05);
+      border: 2px solid red;
+      box-shadow: 0 0 15px red;
+    }
+
+    video {
+      display: none;
+      width: 90%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="text-container" onclick="playVideo()">
+    i wanted to do but
+  </div>
+
+  <video id="memeVideo" autoplay playsinline>
+    <source src="../assets/videos/capacity.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script>
+    function playVideo() {
+      document.querySelector('.text-container').style.display = 'none';
+      const video = document.getElementById('memeVideo');
+      video.style.display = 'block';
+      video.muted = false;
+      video.play();
+    }
+  </script>
+</body>
+</html>

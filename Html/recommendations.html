@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommendation</title>
+  <link rel="stylesheet" href="../css/portfolio.css"> <!-- Using shared navbar styles -->
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 100px 20px 20px; /* top padding for navbar */
+    }
+
+    .recommendation-box {
+      border: 2px solid red;
+      border-radius: 40px;
+      padding: 30px;
+      max-width: 700px;
+      text-align: center;
+      background-color: rgba(255, 0, 0, 0.05);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+      margin-top: 30px;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    .elon-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid red;
+      object-fit: cover;
+      box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
+    }
+
+    .name {
+      margin-top: 15px;
+      font-size: 18px;
+      font-style: italic;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Black Navbar -->
+  <nav class="navbar" style="background-color: #141414;">
+    <a href="index.html">
+      <img src="../assets/images/navicon1.png" alt="DatGlass Guy" class="logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="choosing.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="hireme.html">Hire Me</a></li>
+    </ul>
+  </nav>
+
+  <img class="elon-pic" src="../assets/images/elon.jpeg" alt="Elon Musk">
+  <div class="name">— Elon Musk</div>
+
+  <div class="recommendation-box">
+    "Noel is a <span class='highlight'>legendary programmer</span>. He recently helped us
+    refactor code for the <span class='highlight'>Mars mission</span> in under 42 seconds.
+    His logic is so sound, our rockets debug themselves now.  
+    He's currently assisting in a side project to <span class='highlight'>cure cancer</span>
+    using just JavaScript and sarcasm.  
+    Truly, a <span class='highlight'>force of nature</span> in the tech world."
+  </div>
+
+</body>
+</html>

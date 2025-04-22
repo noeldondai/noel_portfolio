@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: black;
+}
+
+.logo {
+  height: 25px;
+  pointer-events: none;
+  margin-right: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
+
+/* Intro Section */
+.intro-section {
+  position: relative;
+  height: 50vh;
+  background: url('../assets/images/tumb.gif') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-top: 80px;
+  color: white;
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text h1 {
+  font-size: 37px;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Today's Top Pick Section */
+.top-pick-section {
+  padding: 50px 20px;
+  color: white;
+}
+
+.top-pick-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-align: left;
+  padding-left: 0px;
+}
+
+/* Buttons Section */
+.buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar in WebKit (Chrome, Safari) */
+.buttons-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual Button */
+.button {
+  display: inline-block;
+  position: relative;
+  width: 260px;
+  height: 190px;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
+}
+
+/* Image inside Button */
+.button-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  display: block;
+}
+
+/* Text inside Button */
+.button-text {
+  position: absolute;
+  top: 50%;   /* Center vertically */
+  left: 50%;  /* Center horizontally */
+  transform: translate(-50%, -50%);  /* Perfectly center the text */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border-radius: 6px; /* Roundness */
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 15px; /* space between icon and text */
+  padding: 0 10px;
+}
+
+.resume-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px rgba(165, 159, 159, 0.5);
+}
+
+/* Optional icon styling */
+.resume-icon {
+  font-size: 22px;
+}
+
+/* Optional text styling */
+.resume-text {
+  font-size: 16px;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px; /* spacing between icon and text */
+  width: 160px;
+  height: 41px;
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 15px; /* space between resume and github */
+  position: relative;
+  top: -5px;
+}
+
+.github-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.5);
+}
+
+.info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 14px;
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+
+.github-text {
+  font-size: 14px;
+}
