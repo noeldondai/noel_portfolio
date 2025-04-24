@@ -46,15 +46,15 @@ h1 {
 }
 
 #piyush {
-  background-image: url('assets/images/sir.jpeg');
+  background-image: url('../assets/images/sir.jpeg');
 }
 
 #recruiter {
-  background-image: url('assets/images/whoicon.png');
+  background-image: url('../assets/images/whoicon.png');
 }
 
 #stalker {
-  background-image: url('assets/images/stalker.jpg');
+  background-image: url('../assets/images/stalker.jpg');
 }
 
 .profile p {
