@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     video.addEventListener("ended", (event) => {
         // UPDATED HREF.
-        let href = window.location.href.replace("index.html", "") + "/html/choosing.html";
+        let href = window.location.href.replace("index.html", "") + "html/choosing.html";
         window.location.href = href;
     });
 });
